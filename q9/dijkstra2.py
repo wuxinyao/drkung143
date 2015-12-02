@@ -9,7 +9,7 @@ import os
 import csv
 
 log = core.getLogger()
-delayFile = "delay.csv"
+delayFile = "%s/pox/pox/misc/delay.csv" % os.environ[ 'HOME' ]
 
 ''' Add your global variables here ... '''
 delayFile = csv.DictReader(open(delayFile))
